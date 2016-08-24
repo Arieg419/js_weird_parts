@@ -1,4 +1,4 @@
-// polyfill
+// polyfill, checking if current js engine has the object.create feature.
 if (!Object.create) {
   Object.create = function (o) {
     if (arguments.length > 1) {
@@ -15,7 +15,7 @@ var person = {
     firstname: 'Default',
     lastname: 'Default',
     greet: function() {
-        return 'Hi ' + this.firstname;   
+        return 'Hi ' + this.firstname;
     }
 }
 
